@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.second-img-section {
+    border-radius: 15px;
+}
+
+.bg-class {
+    background: url('./environmental-pollution-factory-exterior-night.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+.bg-class::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Text Styling */
+.hero-text {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeInUp 2.5s ease-in-out;
+}
+
+/* Text Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================form================= */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Input Styling */
+.form-control {
+    border: none;
+    border-bottom: 2px solid #1e3c72;
+    border-radius: 0;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-bottom-color: #ff8c00;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Button Styling */
+.btn-custom {
+    background: #ff8c00;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #ff4500;
+}
+
+/* Icon Styling */
+.form-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1e3c72;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    padding-left: 35px;
+}
+
+/* Button Animation */
+.hero-btn {
+    position: relative;
+    z-index: 2;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* ================================================ */
+.second-bg {
+    background: url('https://www.cry.org/wp-content/themes/cry/images/home-bottom-banner.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ================================================ */
+.bg-new {
+    background: url('./new\ pic.webp') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+/* ====================for fixed background=============== */
+.fixed-bg {
+    background: url('./bg-fixed.jpg') center/cover no-repeat fixed;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Text Styling */
+.content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Hover Effect */
+.content:hover {
+    transform: scale(1.1) !important;
+    background-color: #3c3232;
+}
+
+/* Icon Animation */
+.animated-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    animation: bounce 2s infinite;
+}
+.fa-laptop-code{
+    color: #ff8c00 !important;
+}
+
+/* Keyframe Animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
