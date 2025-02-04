@@ -207,3 +207,61 @@
         transform: translateY(-10px);
     }
 }
+
+/* =================animated-text============== */
+.body1 {
+    background: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Container for text */
+.text-container {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #f39c12, #e74c3c);
+    border-radius: 10px;
+    width: 99%;
+    transition: all 0.3s ease;
+}
+
+/* Heading Styling */
+.heading-new {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 15px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* Icon Styling */
+.fa-star {
+    font-size: 4rem;
+    color: #fff;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* Text Styling */
+.p-text {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+/* Hover Effect */
+.text-container:hover {
+    background: linear-gradient(135deg, #2ecc71, #8e44ad);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for Heading and Icon */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
